@@ -1,0 +1,19 @@
+// ==========================================================================
+// TESTIMONIALS SECTION
+// Static 3-card grid (see chat: the screenshot shows no carousel controls,
+// so this needs no JS and no Owl Carousel). A caret icon approximates the
+// small connector shape between each card and its avatar.
+// ==========================================================================
+@use 'variables' as *;
+
+.testimonial-connector {
+  font-size: 1.5rem;
+  color: $light-color;
+}
+
+.testimonial-avatar {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border: 3px solid $white;
+}

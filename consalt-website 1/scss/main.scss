@@ -1,0 +1,21 @@
+// ==========================================================================
+// MAIN
+// The single entry point to compile. Pulls in every partial below.
+//
+//   sass scss/main.scss css/main.css
+//
+// ==========================================================================
+@use 'base';
+@use 'header';
+@use 'hero';
+@use 'icon-features';
+@use 'features';
+@use 'services';
+@use 'portfolio';
+@use 'team';
+@use 'testimonials';
+@use 'faq';
+@use 'logo-bar';
+@use 'blog';
+@use 'footer';
+@use 'animations';

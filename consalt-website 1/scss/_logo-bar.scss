@@ -1,0 +1,15 @@
+// ==========================================================================
+// CLIENT LOGO STRIP
+// Static for now (flexbox, wraps on small screens). Built so it's an easy
+// upgrade later: wrap .logo-carousel's children in Owl Carousel's JS and
+// each .logo-card already works as one "item" -- no markup changes needed.
+// ==========================================================================
+@use 'variables' as *;
+
+.logo-bar {
+  background-color: $accent-blue;
+}
+
+.logo-card {
+  width: 160px;
+}

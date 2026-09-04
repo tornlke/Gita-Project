@@ -1,0 +1,8 @@
+// ==========================================================================
+// EXPLORE FEATURES SECTION
+// Image collage + checklist + stat callouts. Like the icon-features row,
+// this one is built entirely from Bootstrap grid/flex utilities (col-7 /
+// col-5 for the uneven image collage, flex-grow-1 + object-fit-cover so
+// the images fill their boxes without distorting). No custom CSS needed.
+// ==========================================================================
+@use 'variables' as *;

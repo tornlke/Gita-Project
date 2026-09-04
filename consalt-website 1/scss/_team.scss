@@ -1,0 +1,10 @@
+// ==========================================================================
+// TEAM SECTION
+// Four member cards. Bootstrap's .card handles the border/spacing; the
+// only custom rule is a fixed photo height so all four crop identically.
+// ==========================================================================
+@use 'variables' as *;
+
+.team-photo {
+  height: 280px;
+}

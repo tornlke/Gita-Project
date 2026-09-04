@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+:root {
+  --bs-primary: #{$primary-color};
+  --bs-primary-rgb: 11, 53, 88; // $primary-color as R, G, B
+  --bs-body-font-family: #{$font-body};
+  --bs-body-color: #{$body-color};
+  --bs-link-color: #{$primary-color};
+}
+
+body {
+  font-family: $font-body;
+  color: $body-color;
+  padding-top: 4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: 600;
+  color: $primary-color;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 0.7rem 1.75rem;
+}
+
+.section-padding {
+  padding-top: $section-padding-y;
+  padding-bottom: $section-padding-y;
+}

@@ -1,0 +1,10 @@
+// ==========================================================================
+// BLOG / NEWS SECTION
+// Bootstrap's .card handles almost everything; the only custom rule is a
+// fixed thumbnail height so all three crop identically.
+// ==========================================================================
+@use 'variables' as *;
+
+.blog-thumb {
+  height: 220px;
+}

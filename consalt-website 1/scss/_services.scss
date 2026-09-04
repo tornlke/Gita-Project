@@ -1,0 +1,18 @@
+// ==========================================================================
+// SERVICES SECTION
+// The 6-card services grid. Almost everything is Bootstrap utilities;
+// two small custom rules are needed because Bootstrap doesn't ship a
+// preset "icon circle" size, and the left accent border needed to be
+// unambiguous rather than fighting Bootstrap's own border utilities.
+// ==========================================================================
+@use 'variables' as *;
+
+.service-card {
+  border: none;
+  border-left: 4px solid $primary-color;
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+}

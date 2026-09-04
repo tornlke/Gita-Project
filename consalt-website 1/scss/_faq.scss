@@ -1,0 +1,48 @@
+// ==========================================================================
+// FAQ SECTION
+// Bootstrap's real accordion needs its JS to expand/collapse. This reuses
+// the same checkbox-hack pattern as the mobile nav menu in _header.scss:
+// a hidden checkbox + a label (the question row) + a sibling selector
+// that reveals the answer when checked.
+// ==========================================================================
+@use 'variables' as *;
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+  padding: 1.25rem 1.5rem;
+  background-color: $light-color;
+  border-radius: 0.75rem;
+
+  i {
+    transition: transform 0.2s ease;
+  }
+}
+
+.faq-answer {
+  display: none;
+  padding: 1rem 1.5rem 0;
+}
+
+.faq-toggle:checked ~ .faq-answer {
+  display: block;
+}
+
+.faq-toggle:checked ~ .faq-question i {
+  transform: rotate(180deg);
+}
+
+.faq-image {
+  height: 560px;
+}
