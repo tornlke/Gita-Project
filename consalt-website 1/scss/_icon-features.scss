@@ -1,1 +1,50 @@
-@use 'variables' as *;
+
+.custom-hover-card {
+  transition: all 0.4s ease-in-out;
+  background-color: #fff; 
+}
+
+
+.custom-hover-card .card-body {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s ease-in-out;
+  transform: translateY(0);
+}
+
+.custom-hover-card .icon-wrapper {
+  transition: all 0.4s ease-in-out;
+  transform: scale(1) translateY(0);
+  opacity: 1;
+  margin-bottom: 1rem;
+}
+
+.custom-hover-card .bottom-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.custom-hover-card .bottom-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-hover-card:hover .card-body {
+  transform: translateY(-80px);
+}
+
+.custom-hover-card:hover .icon-wrapper {
+  transform: scale(4) translateY(25px);
+  opacity: 0.05;
+}
+
+.custom-hover-card:hover .bottom-image {
+  transform: translateY(0);
+}
