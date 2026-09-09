@@ -424,4 +424,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-align: center;
   padding: 0.35rem 0;
+}
+
+.contact-icon {
+  width: 56px;
+  height: 56px;
+  font-size: 1.25rem;
+}
+
+.contact-form-card .form-control {
+  padding: 0.85rem 1rem;
+  border-radius: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
