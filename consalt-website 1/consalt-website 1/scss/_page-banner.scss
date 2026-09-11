@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+.page-banner {
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-image: url('https://images.unsplash.com/photo-1758873269276-9518d0cb4a0b?auto=format&fit=crop&w=1600&h=400&q=80');
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(black, 0.50);
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.page-banner .breadcrumb {
+  --bs-breadcrumb-divider: '>';
+  --bs-breadcrumb-divider-color: white;
+}

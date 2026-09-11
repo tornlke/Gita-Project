@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+.testimonial-connector {
+  font-size: 1.5rem;
+  color: $light-color;
+}
+
+.testimonial-avatar {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border: 3px solid $white;
+}

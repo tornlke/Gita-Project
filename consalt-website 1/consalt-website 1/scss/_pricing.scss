@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+.pricing-section {
+  background-color: $light-color;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.pricing-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-ribbon {
+  position: absolute;
+  top: 20px;
+  right: -34px;
+  width: 130px;
+  transform: rotate(45deg);
+  background-color: $primary-color;
+  color: $white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.35rem 0;
+}

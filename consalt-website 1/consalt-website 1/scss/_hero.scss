@@ -1,0 +1,41 @@
+@use 'variables' as *;
+
+.hero-section {
+  position: relative;
+  min-height: 650px;
+  overflow: hidden;
+  background-image: url('https://images.unsplash.com/photo-1758518727707-b023e285b709?auto=format&fit=crop&w=1600&h=800&q=80');
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba($primary-color, 0.72);
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.25;
+  color: $white;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
+}
+
+.hero-text {
+  max-width: 600px;
+  font-size: 1.1rem;
+}
