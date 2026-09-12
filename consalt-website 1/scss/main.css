@@ -196,12 +196,55 @@ h1, h2, h3, h4, h5, h6 {
 
 .service-card {
   border: none;
-  border-left: 4px solid #0b3558;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.4s ease;
 }
-
-.service-icon {
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #0b3558;
+  z-index: 0;
+  transition: width 0.6s ease;
+}
+.service-card .card-body {
+  position: relative;
+  z-index: 1;
+}
+.service-card h3, .service-card p {
+  transition: color 0.4s ease;
+}
+.service-card .service-icon {
   width: 64px;
   height: 64px;
+  background-color: #0b3558;
+  color: #ffffff;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.service-card .my-outline-button {
+  border-color: #0b3558;
+  color: #0b3558;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+.service-card:hover::before {
+  width: 100%;
+}
+.service-card:hover h3, .service-card:hover p {
+  color: #ffffff !important;
+}
+.service-card:hover .service-icon {
+  background-color: #ffffff !important;
+  color: #0b3558 !important;
+}
+.service-card:hover .my-outline-button {
+  background-color: #ffffff !important;
+  color: #0b3558 !important;
+  border-color: #ffffff !important;
 }
 
 .project-thumb {
@@ -363,6 +406,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icon-appear {
+  width: 64px;
+  height: 64px;
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -435,4 +480,9 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form-card .form-control {
   padding: 0.85rem 1rem;
   border-radius: 0.5rem;
+}
+
+.black-box {
+  width: 40px;
+  height: 25px;
 }/*# sourceMappingURL=main.css.map */

@@ -67,7 +67,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#">Pages</a>
+            <a class="nav-link dropdown-toggle active" href="#">Pages</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
               <li><a class="dropdown-item" href="team.html">Team</a></li>
@@ -80,7 +80,7 @@
 
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
 
-          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
           <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
             <a href="#" class="text-primary" aria-label="Search"><i class="bi bi-search fs-5"></i></a>
@@ -101,65 +101,81 @@
 
 <section class="page-banner text-center text-white">
   <div class="container">
-    <h1 class="text-white mb-2">Contact</h1>
+    <h1 class="text-white mb-2">FAQ</h1>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb justify-content-center mb-0">
         <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Here!</a></li>
         <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-        <li class="breadcrumb-item active text-white" aria-current="page">Contact</li>
+        <li class="breadcrumb-item active text-white" aria-current="page">Pages</li>
+        <li class="breadcrumb-item active text-white" aria-current="page">FAQ</li>
       </ol>
     </nav>
   </div>
 </section>
 
-
-<!-- CONTACT SECTION -->
-
-<section class="section-padding" id="contact">
+<!-- FAQ SECTION -->
+ 
+<section class="section-padding" id="faq">
   <div class="container">
     <div class="row align-items-center g-5">
 
-      <div class="col-lg-6">
-        <div class="contact-form-card bg-white rounded-4 shadow p-4 p-md-5">
-          <form action="#" method="POST">
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Name*" required>
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Email*" required>
-            </div>
-            <div class="mb-4">
-              <textarea class="form-control" rows="5" placeholder="Your Comment"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100 py-3 my-button">Send Request</button>
-          </form>
-        </div>
+      <div class="col-lg-5">
+        <img
+          src="https://images.unsplash.com/photo-1758599543121-90a7b360bc2d?auto=format&fit=crop&w=700&h=850&q=80"
+          alt="Two colleagues talking over a tablet"
+          class="img-fluid w-100 faq-image object-fit-cover rounded-4">
       </div>
 
-      <div class="col-lg-6">
-        <p class="text-primary text-uppercase fw-bold small mb-2">Our Question</p>
-        <h2 class="mb-4">Get In Touch</h2>
-        <p class="text-body-secondary mb-4">We are a leader in endpoint protection solutions by industry analysts, indep endet testing organi- zations and security.</p>
+      <div class="col-lg-7">
+        <p class="text-primary text-uppercase fw-bold small mb-2">Our FAQ</p>
+        <h2 class="mb-4">Frequently Asked Questions?</h2>
 
-        <div class="d-flex align-items-center gap-3 mb-4">
-          <div class="contact-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-            <i class="bi bi-headset"></i>
-          </div>
-          <span class="fw-bold">+2541-754-3010 Or +6951-754-3010</span>
-        </div>
+        <div class="faq-list">
 
-        <div class="d-flex align-items-center gap-3 mb-4">
-          <div class="contact-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-            <i class="bi bi-envelope-fill"></i>
+          <div class="faq-item">
+            <input type="checkbox" id="faq-1" class="faq-toggle">
+            <label for="faq-1" class="faq-question">
+              <span>1. Do You Need A Business Service?</span>
+              <i class="bi bi-chevron-down"></i>
+            </label>
+            <div class="faq-answer">
+              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do the eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+            </div>
           </div>
-          <span class="fw-bold">demo@example.com</span>
-        </div>
 
-        <div class="d-flex align-items-center gap-3">
-          <div class="contact-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-            <i class="bi bi-geo-alt-fill"></i>
+          <div class="faq-item">
+            <input type="checkbox" id="faq-2" class="faq-toggle">
+            <label for="faq-2" class="faq-question">
+              <span>2. Business Service A Scam?</span>
+              <i class="bi bi-chevron-down"></i>
+            </label>
+            <div class="faq-answer">
+              <p class="mb-0">NLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do the eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+            </div>
           </div>
-          <span class="fw-bold">246 Old York Rd, NY 08505</span>
+
+          <div class="faq-item">
+            <input type="checkbox" id="faq-3" class="faq-toggle">
+            <label for="faq-3" class="faq-question">
+              <span>3. Most Out Of Your Business Service?</span>
+              <i class="bi bi-chevron-down"></i>
+            </label>
+            <div class="faq-answer">
+              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do the eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <input type="checkbox" id="faq-4" class="faq-toggle">
+            <label for="faq-4" class="faq-question">
+              <span>4. The Sound Of Business Service?</span>
+              <i class="bi bi-chevron-down"></i>
+            </label>
+            <div class="faq-answer">
+              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do the eiusmod tempor incididunt ut labore et dolore magna aliqu ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 

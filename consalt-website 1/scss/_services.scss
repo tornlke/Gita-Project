@@ -2,10 +2,65 @@
 
 .service-card {
   border: none;
-  border-left: 4px solid $primary-color;
-}
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.4s ease;
 
-.service-icon {
-  width: 64px;
-  height: 64px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $primary-color;
+    z-index: 0;
+    transition: width 0.6s ease;
+  }
+
+  .card-body {
+    position: relative;
+    z-index: 1;
+  }
+
+  h3, p {
+    transition: color 0.4s ease;
+  }
+
+  .service-icon {
+    width: 64px;
+    height: 64px;
+    background-color: $primary-color;
+    color: #ffffff;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  .my-outline-button {
+    border-color: $primary-color;
+    color: $primary-color;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+  }
+
+  &:hover {
+    
+    &::before {
+      width: 100%;
+    }
+
+    h3, p {
+      color: #ffffff !important;
+    }
+
+    .service-icon {
+      background-color: #ffffff !important;
+      color: $primary-color !important;
+    }
+
+    .my-outline-button {
+      background-color: #ffffff !important;
+      color: $primary-color !important;
+      border-color: #ffffff !important;
+    }
+  }
 }
