@@ -1,0 +1,73 @@
+.my-button {
+    --bs-btn-bg: #0b3558;
+    --bs-btn-border-color: #0b3558;
+    --bs-btn-hover-bg: #0d6efd;
+    --bs-btn-hover-border-color: #0d6efd;
+    transition: background-color 1s ease, border-color 1s ease;
+}
+.my-outline-button {
+    --bs-btn-bg: #ffffff;
+    --bs-btn-border-color: #0b3558;
+    --bs-btn-hover-bg: #0b3558;
+    --bs-btn-hover-border-color: #0b3558;
+     --bs-btn-color: #0b3558;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+.hover-card {
+  position: relative;
+  overflow: hidden;
+}
+.hover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 51, 100, 0.3); 
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; 
+  transition: opacity 0.4s ease;
+}
+
+.hover-card:hover img {
+  transform: scale(1.1);
+}
+
+.hover-card:hover .card-content {
+  opacity: 1;
+}
+
+.blue-bg {
+  background-color: rgb(19, 51, 100);
+  display: inline-block;
+}
+
+.fade-hover {
+  transition: opacity 0.4s ease; 
+}
+
+.icon-appear{
+  width: 64px;
+  height: 64px;
+  opacity: 0;
+  transition: opacity 0.4s ease; 
+}
+
+.blue-bg:hover .fade-hover {
+  opacity: 0.7; 
+}
+
+.blue-bg:hover .icon-appear {
+  opacity: 1; 
+}

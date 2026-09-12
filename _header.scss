@@ -1,0 +1,86 @@
+@use 'variables' as *;
+
+.site-header {
+  position: sticky;
+  top: 4px;
+  z-index: 1030;
+}
+
+.top-accent-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 1040;
+}
+
+.topbar {
+  font-size: 0.85rem;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: $primary-color;
+
+  &:hover,
+  &.active {
+    opacity: 0.7;
+  }
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 0.25rem;
+
+  span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: $primary-color;
+  }
+}
+
+@media (min-width: 990px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 989px) {
+  .dropdown-menu {
+    display: block;
+    position: static;
+    box-shadow: none;
+    border: 0;
+    padding-left: 1rem;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+    order: 3;
+  }
+
+  .nav-toggle:checked ~ .nav-menu {
+    display: block;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .nav-item {
+    margin: 0.4rem 0;
+  }
+}
